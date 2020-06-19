@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 5, sass/screen.scss */
 html {
-  background: url(images/page-bg.png) repeat-x #333333;
+  background: url(page-bg.png) repeat-x #333333;
   font: 0.85em/1 "Aldrich", Helvetica, Arial, sans-serif;
   color: transparent;
 }
@@ -110,7 +110,7 @@ a:hover {
   position: relative;
   width: 680px;
   padding: 0 140px 70px;
-  background: url(images/box-shadow.png) bottom no-repeat;
+  background: url(box-shadow.png) bottom no-repeat;
 }
 
 /* line 29, sass/screen.scss */
@@ -166,7 +166,7 @@ footer {
   top: 80px;
   width: 30px;
   height: 300px;
-  background: url(images/next-prev-sprite.png) no-repeat;
+  background: url(next-prev-sprite.png) no-repeat;
   display: block;
   -webkit-transition: background .4s;
   -moz-transition: background .4s;
@@ -174,7 +174,7 @@ footer {
 }
 /* line 73, sass/screen.scss */
 #next:hover, #prev:hover {
-  background: url(images/next-prev-sprite-hover.png) no-repeat;
+  background: url(next-prev-sprite-hover.png) no-repeat;
   border: none;
 }
 
