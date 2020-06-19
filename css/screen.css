@@ -1,0 +1,723 @@
+/* line 17, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, sass/screen.scss */
+html {
+  background: url(images/page-bg.png) repeat-x #333333;
+  font: 0.85em/1 "Aldrich", Helvetica, Arial, sans-serif;
+  color: transparent;
+}
+
+/* line 11, sass/screen.scss */
+header {
+  margin: 20px 140px;
+}
+
+/* line 12, sass/screen.scss */
+h1 {
+  font-size: 48px;
+  color: #2edbac;
+  text-transform: uppercase;
+}
+
+/* line 13, sass/screen.scss */
+h2 {
+  font-size: 22px;
+  color: #555;
+}
+
+/* line 14, sass/screen.scss */
+a {
+  color: #2edbac;
+  text-decoration: none;
+}
+
+/* line 15, sass/screen.scss */
+a:hover {
+  border-bottom: solid 1px #2edbac;
+}
+
+/* line 17, sass/screen.scss */
+#page {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 22, sass/screen.scss */
+#viewport-shadow {
+  position: relative;
+  width: 680px;
+  padding: 0 140px 70px;
+  background: url(images/box-shadow.png) bottom no-repeat;
+}
+
+/* line 29, sass/screen.scss */
+#viewport, #box, .slide {
+  width: 680px;
+  height: 460px;
+}
+
+/* line 34, sass/screen.scss */
+#viewport {
+  overflow: hidden;
+}
+
+/* line 35, sass/screen.scss */
+footer {
+  margin: 0 140px;
+}
+
+/* line 37, sass/screen.scss */
+#controls {
+  position: relative;
+  top: -40px;
+  float: right;
+  overflow: hidden;
+}
+/* line 43, sass/screen.scss */
+#controls li {
+  display: inline;
+}
+
+/* line 46, sass/screen.scss */
+.goto-slide {
+  margin-left: 10px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  float: left;
+  border: solid 1px #000;
+  background-color: #555;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0px 0px 8px #333;
+  -moz-box-shadow: inset 0px 0px 8px #333;
+  box-shadow: inset 0px 0px 8px #333;
+}
+/* line 59, sass/screen.scss */
+.goto-slide.current {
+  background-color: #2edbac;
+}
+
+/* line 62, sass/screen.scss */
+#next, #prev {
+  position: absolute;
+  top: 80px;
+  width: 30px;
+  height: 300px;
+  background: url(images/next-prev-sprite.png) no-repeat;
+  display: block;
+  -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  transition: background .4s;
+}
+/* line 73, sass/screen.scss */
+#next:hover, #prev:hover {
+  background: url(images/next-prev-sprite-hover.png) no-repeat;
+  border: none;
+}
+
+/* line 79, sass/screen.scss */
+#prev {
+  left: 90px;
+}
+
+/* line 80, sass/screen.scss */
+#next, #next:hover {
+  left: 840px;
+  background-position: -30px 0;
+}
+
+/* line 83, sass/screen.scss */
+#effect-switcher h2 {
+  border-bottom: solid 1px #555;
+  margin: 0 0 10px;
+}
+
+/* line 89, sass/screen.scss */
+#effect-list {
+  overflow: hidden;
+}
+/* line 91, sass/screen.scss */
+#effect-list li {
+  display: inline;
+}
+
+/* line 94, sass/screen.scss */
+.effect, .effect:hover {
+  display: block;
+  float: left;
+  margin: 10px 10px 0 0;
+  border: solid 1px black;
+  border-radius: 7px;
+  padding: 10px 12px 6px;
+  color: #ccc;
+  text-decoration: none;
+  background-color: #555;
+  -webkit-box-shadow: inset 0px 0px 8px #000;
+  -moz-box-shadow: inset 0px 0px 8px #333;
+  box-shadow: inset 0px 0px 8px #333;
+  position: relative;
+}
+/* line 109, sass/screen.scss */
+.effect.current, .effect:hover.current {
+  color: #2edbac;
+}
+/* line 113, sass/screen.scss */
+.effect span, .effect:hover span {
+  font-size: .7em;
+  position: absolute;
+  top: -8px;
+  right: -4px;
+  background-color: red;
+  border-radius: 6px;
+  border: solid 1px #555;
+  color: white;
+  padding: 3px 4px 2px;
+  display: inline-block;
+}
+
+/* line 127, sass/screen.scss */
+#time-indicator {
+  width: 0px;
+  height: 3px;
+  background-color: #2edbac;
+  position: absolute;
+  top: 460px;
+  left: 140px;
+}
+
+/* line 136, sass/screen.scss */
+#credits {
+  margin: 20px 0 40px;
+  padding: 10px 0 0;
+  color: #555;
+  font-size: .9em;
+}
+
+/*-----------------------*/
+#botRe {
+		fill: rgba(255,255,255,1);
+	}
+	.botRe {
+		position: absolute;
+		overflow: visible;
+		width: 100%;
+		height: 765px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 3138px;
+	}
+	#bottPath {
+		position: absolute;
+		width: 100%;
+		height: 409.295px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 3010.733px;
+		overflow: visible;
+	}
+	#Component_13__1 {
+		position: absolute;
+		width: 512px;
+		height: 644px;
+		left: 37px;
+		top: 3199px;
+		overflow: visible;
+	}
+	#Line_3 {
+		fill: transparent;
+		stroke: rgba(255,0,0,1);
+		stroke-width: 5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_3 {
+		overflow: visible;
+		position: absolute;
+		width: 7px;
+		height: 644.016px;
+		left: 510px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rampage_racers_automobile_club {
+		left: 3px;
+		top: 155px;
+		position: absolute;
+		overflow: visible;
+		width: 473px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Trajan Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,0,0,1);
+	}
+	#_____________Jawaharlal_Nehru_ {
+		left: 0px;
+		top: 242px;
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Trajan Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(0,0,0,1);
+	}
+	#HYDERABAD-500085_TELANGANA_IND {
+		left: 257px;
+		top: 285px;
+		position: absolute;
+		overflow: visible;
+		width: 212px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Trajan Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(0,0,0,1);
+	}
+	#Icon_awesome-facebook {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_awesome-facebook {
+		overflow: visible;
+		position: absolute;
+		width: 34.875px;
+		height: 34.664px;
+		left: 362.161px;
+		top: 397.536px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_awesome-twitter {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_awesome-twitter {
+		overflow: visible;
+		position: absolute;
+		width: 36px;
+		height: 29.239px;
+		left: 407.216px;
+		top: 399.396px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_awesome-linkedin {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_awesome-linkedin {
+		overflow: visible;
+		position: absolute;
+		width: 31.5px;
+		height: 31.5px;
+		left: 453.412px;
+		top: 398.235px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+  #button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+
+
+        }
+
+        .button1 {
+            background-color: transparent;
+            color: white;
+            border: 3px solid #ffffff;
+            position: absolute;
+            overflow: visible;
+            width: 134px;
+            height: 50px;
+            left: -400px;
+
+            border-radius: 20px;
+
+        }
+
+
+        .button1:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+
+        }
+
+        .button2 {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 134px;
+            height: 50px;
+            left: -200PX;
+
+            border-radius: 20px;
+
+        }
+
+
+        .button2:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+
+
+        }
+
+        .button3 {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 134px;
+            height: 50px;
+            left: 00px;
+            border-radius: 20px;
+
+        }
+
+
+        .button3:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+
+        }
+
+        .button4 {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 134px;
+            height: 50px;
+            left: 200px;
+
+            border-radius: 20px;
+
+        }
+
+
+        .button4:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+        }
+
+        .button6 {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 134px;
+            height: 50px;
+            left: 300px;
+            top: 100px;
+
+            border-radius: 20px;
+
+        }
+
+
+        .button6:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+        }
+
+        .button5 {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 413px;
+            height: 94px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 1780px;
+            border-radius: 20px;
+
+        }
+
+        .button5:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+
+        }
+        .buttonm1 {
+            background-color: transparent;
+            color: white;
+            border: 3px solid #ffffff;
+            position: absolute;
+            overflow: visible;
+            width: 90px;
+            height: 30px;
+            left: 200px;
+            
+
+
+            border-radius: 20px;
+
+        }
+
+
+        .buttonm1:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+
+        }
+
+        .buttonm2 {
+            background-color: transparent;
+            color: white;
+            border: 3px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 90px;
+            height: 30px;
+            left: 300PX;
+
+            border-radius: 20px;
+
+        }
+
+
+        .buttonm2:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+
+
+        }
+
+        .buttonm3 {
+            background-color: transparent;
+            color: white;
+            border: 3px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 100px;
+            height: 30px;
+            left: 400px;
+            border-radius: 20px;
+
+        }
+
+
+        .buttonm3:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+
+        }
+
+        .buttonm4 {
+            background-color: transparent;
+            color: white;
+            border: 3px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 94px;
+            height: 30px;
+            left: 250px;
+            top: 40px;
+
+            border-radius: 20px;
+
+        }
+
+
+        .buttonm4:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+        }
+
+        .buttonm6 {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 94px;
+            height: 30px;
+            left: 350px;
+            top: 40px;
+
+            border-radius: 20px;
+
+        }
+
+
+        .buttonm6:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+        }
+
+        .buttonm5 {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            position: absolute;
+            overflow: visible;
+            width: 313px;
+            height: 64px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 930px;
+            border-radius: 20px;
+
+        }
+
+        .buttonm5:hover {
+            background-color: black;
+            border: 3px solid red;
+            color: red;
+            position: absolute;
+            overflow: visible;
+
+        } 
+  .gallery {
+  background-color:black ;
+  border: 3px solid red;
+  color: red;
+  
+    position: absolute;
+		overflow: visible;
+		 width: 134px;
+            height: 50px;
+            left: -100px;
+            top: 100px;
+        border-radius: 20px;
+    
+}
+#car {
+		position: relative;
+		width: 582px;
+		height: 150px;
+		left: 63%;
+		transform: translateX(-50%);
+		top: 60px;
+		overflow: visible;
+        animation: mymove 5s;
+        animation-timing-function: ease;
+        }
+
+        @keyframes mymove {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: 63%;
+            }
+        }
